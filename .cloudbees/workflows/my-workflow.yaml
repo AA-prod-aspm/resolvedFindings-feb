@@ -45,7 +45,7 @@ jobs:
           echo "artifact ID for qa-go-repo:${{ cloudbees.version }} is: ${{ steps.register-artifact.outputs.artifact-id }}"
 
       - id: upload-binary
-        name: Upload binary using action
+        name: Upload binary using actions
         uses: cloudbees-io/asset-chain-utils-preprod/upload-binary@v1
         with:
           file-path: container-image.tar
